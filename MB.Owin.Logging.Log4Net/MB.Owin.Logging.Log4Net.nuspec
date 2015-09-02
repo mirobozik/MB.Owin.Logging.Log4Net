@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://logging.apache.org/log4net/license.html</licenseUrl>
+    <projectUrl>https://github.com/mirrobozik/MB.Owin.Logging.Log4Net</projectUrl>    
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>First release version of Log4Net implementation for Owin</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>Owin Log4Net Logger LoggerFactory MB</tags>
+  </metadata>
+</package>

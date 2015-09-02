@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Logging.Log4Net", "MB.Owin.Logging.Log4Net\MB.Owin.Logging.Log4Net.csproj", "{F6F82FE2-61A1-4A00-96D3-4A13F07B251A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Logging.Log4Net.Demo", "MB.Owin.Logging.Log4Net.Demo\MB.Owin.Logging.Log4Net.Demo.csproj", "{329244F2-79E0-4244-9EE7-02F91381CDC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Logging.Log4Net.Demo.SelfHost", "MB.Owin.Logging.Log4Net.Demo.SelfHost\MB.Owin.Logging.Log4Net.Demo.SelfHost.csproj", "{A86A8FEA-9F9D-4AD4-BB15-5A8D9A8D0424}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{90352031-EE7A-4ECF-9187-C3710322E851}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6F82FE2-61A1-4A00-96D3-4A13F07B251A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6F82FE2-61A1-4A00-96D3-4A13F07B251A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6F82FE2-61A1-4A00-96D3-4A13F07B251A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6F82FE2-61A1-4A00-96D3-4A13F07B251A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{329244F2-79E0-4244-9EE7-02F91381CDC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{329244F2-79E0-4244-9EE7-02F91381CDC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{329244F2-79E0-4244-9EE7-02F91381CDC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{329244F2-79E0-4244-9EE7-02F91381CDC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A86A8FEA-9F9D-4AD4-BB15-5A8D9A8D0424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A86A8FEA-9F9D-4AD4-BB15-5A8D9A8D0424}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A86A8FEA-9F9D-4AD4-BB15-5A8D9A8D0424}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A86A8FEA-9F9D-4AD4-BB15-5A8D9A8D0424}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
