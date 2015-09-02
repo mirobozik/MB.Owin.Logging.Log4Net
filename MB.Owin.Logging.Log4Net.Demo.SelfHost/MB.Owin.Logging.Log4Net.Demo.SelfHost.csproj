@@ -86,7 +86,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MB.Owin.Logging.Log4Net.Demo\MB.Owin.Logging.Log4Net.Demo.csproj">
       <Project>{329244f2-79e0-4244-9ee7-02f91381cdc8}</Project>
-      <Name>Owin.Logging.Log4Net.Demo</Name>
+      <Name>MB.Owin.Logging.Log4Net.Demo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -100,7 +100,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MB.Owin.Logging.Log4Net\MB.Owin.Logging.Log4Net.csproj">
       <Project>{f6f82fe2-61a1-4a00-96d3-4a13f07b251a}</Project>
-      <Name>Owin.Logging.Log4Net</Name>
+      <Name>MB.Owin.Logging.Log4Net</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

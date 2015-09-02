@@ -3,17 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Logging.Log4Net", "MB.Owin.Logging.Log4Net\MB.Owin.Logging.Log4Net.csproj", "{F6F82FE2-61A1-4A00-96D3-4A13F07B251A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MB.Owin.Logging.Log4Net", "MB.Owin.Logging.Log4Net\MB.Owin.Logging.Log4Net.csproj", "{F6F82FE2-61A1-4A00-96D3-4A13F07B251A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Logging.Log4Net.Demo", "MB.Owin.Logging.Log4Net.Demo\MB.Owin.Logging.Log4Net.Demo.csproj", "{329244F2-79E0-4244-9EE7-02F91381CDC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MB.Owin.Logging.Log4Net.Demo", "MB.Owin.Logging.Log4Net.Demo\MB.Owin.Logging.Log4Net.Demo.csproj", "{329244F2-79E0-4244-9EE7-02F91381CDC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Logging.Log4Net.Demo.SelfHost", "MB.Owin.Logging.Log4Net.Demo.SelfHost\MB.Owin.Logging.Log4Net.Demo.SelfHost.csproj", "{A86A8FEA-9F9D-4AD4-BB15-5A8D9A8D0424}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MB.Owin.Logging.Log4Net.Demo.SelfHost", "MB.Owin.Logging.Log4Net.Demo.SelfHost\MB.Owin.Logging.Log4Net.Demo.SelfHost.csproj", "{A86A8FEA-9F9D-4AD4-BB15-5A8D9A8D0424}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{90352031-EE7A-4ECF-9187-C3710322E851}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{21CD1560-ADB1-4D19-9767-2BA19D9B01CB}"
+	ProjectSection(SolutionItems) = preProject
+		build-nuget-package.cmd = build-nuget-package.cmd
 	EndProjectSection
 EndProject
 Global
