@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <id>MB.Owin.Logging.Log4Net</id>
+    <version>1.0.0</version>
+    <title>Log4Net for Owin</title>
+    <authors>Miro Božík</authors>
+    <owners>Miro Božík</owners>
     <licenseUrl>https://logging.apache.org/log4net/license.html</licenseUrl>
     <projectUrl>https://github.com/mirrobozik/MB.Owin.Logging.Log4Net</projectUrl>    
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>Log4Net Logging implementation for Owin</description>
     <releaseNotes>First release version of Log4Net implementation for Owin</releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>Owin Log4Net Logger LoggerFactory MB</tags>
-  </metadata>
+    <dependencies>
+      <dependency id="log4net" version="2.0.3" />
+      <dependency id="Microsoft.Owin" version="3.0.1" />
+    </dependencies>
+  </metadata>  
+  <files>
+    <file src="bin\Release\MB.Owin.Logging.Log4Net.dll" target="lib\net45" />
+  </files>
 </package>
