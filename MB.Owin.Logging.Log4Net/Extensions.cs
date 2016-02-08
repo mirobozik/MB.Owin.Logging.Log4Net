@@ -14,23 +14,21 @@ namespace MB.Owin.Logging.Log4Net
     {
         public static void UseLog4Net(this IAppBuilder app, Assembly repositoryAssembly)
         {
-            ConfigureLogger("~/Web.config");
+            ConfigureLogger();
             app.SetLoggerFactory(new Log4NetLogFactory(repositoryAssembly));
         }
 
         public static void UseLog4Net(this IAppBuilder app, Func<TraceEventType, Level> getLogLevel)
         {
-            ConfigureLogger("~/Web.config");
+            ConfigureLogger();
             app.SetLoggerFactory(new Log4NetLogFactory(getLogLevel, Assembly.GetExecutingAssembly()));
         }
 
         public static void UseLog4Net(this IAppBuilder app, Func<TraceEventType, Level> getLogLevel, Assembly repositoryAssembly)
         {
-            ConfigureLogger("~/Web.config");
+            ConfigureLogger();
             app.SetLoggerFactory(new Log4NetLogFactory(getLogLevel, repositoryAssembly));
-        }
-
-        //log4net.Config.XmlConfigurator.Configure(new FileInfo(Server.MapPath("~/Web.config")));
+        }        
 
         public static void UseLog4Net(this IAppBuilder app, string configFile)
         {            
@@ -40,18 +38,19 @@ namespace MB.Owin.Logging.Log4Net
 
         public static void UseLog4Net(this IAppBuilder app)
         {
-            ConfigureLogger("~/Web.config");            
+            ConfigureLogger();
             app.SetLoggerFactory(new Log4NetLogFactory(Assembly.GetExecutingAssembly()));
         }
 
-        private static void ConfigureLogger(string configFile)
-        {
-            var filePath = MapPath(configFile);
-            if (string.IsNullOrWhiteSpace(filePath))
+        private static void ConfigureLogger(string configFile = null)
+        {            
+            if (!string.IsNullOrWhiteSpace(configFile))
             {
-                throw new ArgumentNullException("filePath");
+                var filePath = MapPath(configFile);
+                XmlConfigurator.Configure(new FileInfo(filePath));
+                return;
             }
-            XmlConfigurator.Configure(new FileInfo(filePath));
+            XmlConfigurator.Configure();
         }
 
         private static string MapPath(string virtualPath)

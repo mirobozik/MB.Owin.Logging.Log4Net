@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MB.Owin.Logging.Log4Net</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Log4Net for Owin</title>
     <authors>Miro Božík</authors>
     <owners>Miro Božík</owners>
